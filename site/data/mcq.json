@@ -1,0 +1,832 @@
+[
+{
+"id": "PHY-1",
+"level": 1,
+"asked": "C3/C4/Calvin 2015, 2016, 2017, 2018, 2021, 2023, 2024",
+"q": "In the Calvin cycle, Rubisco fixes CO2 onto which acceptor?",
+"options": [
+"PEP",
+"Ribulose-1,5-bisphosphate (RuBP)",
+"3-PGA",
+"Oxaloacetate"
+],
+"answer": 1,
+"explain": "Rubisco carboxylates RuBP; the product splits into 2 × 3-PGA. [Wikipedia: Calvin cycle]",
+"theme": "Plant physiology & biochemistry",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "PHY-2",
+"level": 2,
+"asked": "phytochrome 2015, 2017, 2019, 2022, 2023, 2024",
+"q": "The physiologically ACTIVE form of phytochrome and its absorption maximum:",
+"options": [
+"Pr, 665 nm",
+"Pfr, 730 nm",
+"Pr, 730 nm",
+"Pfr, 450 nm"
+],
+"answer": 1,
+"explain": "Pr (λmax 665 nm) is the inactive red-absorbing form; red light converts it to active Pfr (λmax 730 nm), which moves into the nucleus. [Wikipedia: Phytochrome]",
+"theme": "Plant physiology & biochemistry",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "PHY-3",
+"level": 3,
+"asked": "triple response 2015 (P2 Q5c), 2024 (P2 Q5a); ethylene 2021 (P2 Q6a)",
+"q": "Which is NOT part of ethylene's \"triple response\" in dark-grown seedlings?",
+"options": [
+"Shortening of the hypocotyl",
+"Thickening of the hypocotyl",
+"Pronounced apical hook",
+"Enhanced elongation of the hypocotyl"
+],
+"answer": 3,
+"explain": "The triple response is shortening + thickening of the hypocotyl + an exaggerated apical hook. [Wikipedia: Ethylene (plant hormone)]",
+"theme": "Plant physiology & biochemistry",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "PHY-5",
+"level": 5,
+"asked": "CAM 2024 (P2 Q6c \"CAM is an adaptation to desert life\"); CO2-concentrating mechanisms 2023 (P2 Q7a)",
+"q": "Consider:\n1. In full CAM, stomata open at night and CO2 is stored as malic acid in the vacuole.\n2. By day, with stomata shut, malate is decarboxylated and the CO2 enters the Calvin cycle.\n3. CAM separates the two carboxylations spatially, between two cell types, exactly as C4 does.\n4. Both CAM and C4 concentrate CO2 around Rubisco.",
+"options": [
+"1, 2 and 4",
+"1 and 3",
+"2, 3 and 4",
+"1, 2, 3 and 4"
+],
+"answer": 0,
+"explain": "CAM separates the carboxylations in TIME (temporal), not space. C4 is the spatial one. [Wikipedia: Crassulacean acid metabolism]",
+"theme": "Plant physiology & biochemistry",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "PHY-6",
+"level": 6,
+"asked": "2021 P2 Q7c \"C2 cycle returns to the C3 cycle three-quarters of the carbon lost as glycolate\"",
+"q": "Which statements about the photorespiratory (C2) cycle are correct?\n1. It runs across chloroplast, peroxisome and mitochondrion.\n2. In the mitochondrion, two glycines give one serine, releasing CO2 and NH3.\n3. Of the 4 carbons in two phosphoglycolates, 3 return to the Calvin cycle as 3-PGA.\n4. Glycine decarboxylation takes place in the peroxisome.",
+"options": [
+"1, 2 and 3",
+"1, 3 and 4",
+"2 and 4",
+"1, 2, 3 and 4"
+],
+"answer": 0,
+"explain": "Glycine decarboxylase works in the mitochondrion, not the peroxisome. 3 of 4 C are salvaged, which is the \"three-quarters\" in the PYQ. [Wikipedia: Photorespiration; Calvin cycle]",
+"theme": "Plant physiology & biochemistry",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "GEN-1",
+"level": 1,
+"asked": "genetic code 2015, 2016, 2020, 2022, 2024 (2024 P2 Q1e: wobble)",
+"q": "The wobble hypothesis (1966) was proposed by:",
+"options": [
+"James Watson",
+"Francis Crick",
+"Marshall Nirenberg",
+"Har Gobind Khorana"
+],
+"answer": 1,
+"explain": "[Wikipedia: Wobble base pair]",
+"theme": "Genetics, molecular biology & evolution",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "GEN-2",
+"level": 2,
+"asked": "lac operon 2019 (P2 Q2b), 2022 (P2 Q3a, 20 m)",
+"q": "The natural inducer that binds and inactivates the lac repressor (the lacI product) is:",
+"options": [
+"Lactose",
+"Glucose",
+"Allolactose",
+"cAMP"
+],
+"answer": 2,
+"explain": "Allolactose, made from lactose by β-galactosidase (lacZ), binds the repressor and causes an allosteric shift. [Wikipedia: Lac operon]",
+"theme": "Genetics, molecular biology & evolution",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "GEN-4",
+"level": 4,
+"asked": "inversions 2015 (P2 Q2b, 20 m), 2017 (P2 Q2b), 2019 (P2 Q3b)",
+"q": "Consider:\n1. A paracentric inversion does not include the centromere.\n2. A crossover inside a paracentric inversion loop gives one dicentric and one acentric chromatid.\n3. A pericentric inversion includes the centromere.\n4. A dicentric bridge at anaphase I is the typical result of a crossover in a pericentric loop.",
+"options": [
+"1, 2 and 3",
+"1, 2 and 4",
+"3 and 4",
+"all four"
+],
+"answer": 0,
+"explain": "A crossover in a pericentric loop gives deletions and duplications, not a dicentric bridge. [Wikipedia: Chromosomal inversion]",
+"theme": "Genetics, molecular biology & evolution",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "GEN-5",
+"level": 5,
+"asked": "U's triangle 2014 (P2 Q4c); allopolyploidy 2020 (P2 Q2a, 20 m); polyploidy in crop improvement 2024 (P2 Q4c)",
+"q": "Brassica napus (2n = 4x = 38) is an allotetraploid with genome:",
+"options": [
+"AABB, from B. rapa × B. nigra",
+"AACC, from B. rapa × B. oleracea",
+"BBCC, from B. nigra × B. oleracea",
+"AACC, from B. juncea × B. oleracea"
+],
+"answer": 1,
+"explain": "A genome (B. rapa) has 10 chromosomes and C genome (B. oleracea) has 9, so n = 19. B. juncea is AABB and B. carinata is BBCC. [Wikipedia: Triangle of U]",
+"theme": "Genetics, molecular biology & evolution",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "GEN-6",
+"level": 6,
+"asked": "linkage / three-point test cross 2020 (P2 Q4a, 20 m), 2018 (P2 Q3a), 2023 (P2 Q3a); crossing over 2021, 2014",
+"q": "In a three-point test cross of 1,000 progeny, recombination a–b = 0.20 and b–c = 0.10. Ten double crossovers are observed. Interference is:",
+"options": [
+"0.5",
+"0.05",
+"2.0",
+"0.25"
+],
+"answer": 0,
+"explain": "Expected DCO = 0.20 × 0.10 × 1000 = 20. Coefficient of coincidence = 10/20 = 0.5. Interference = 1 − c.o.c. = 0.5. [Wikipedia: Coefficient of coincidence]",
+"theme": "Genetics, molecular biology & evolution",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "ECO-1",
+"level": 1,
+"asked": "CBD 2021 (P2 Q5a), 2023 (P2 Q8b)",
+"q": "The Convention on Biological Diversity was opened for signature at:",
+"options": [
+"Stockholm, 1972",
+"Rio de Janeiro Earth Summit, 1992",
+"Kyoto, 1997",
+"Nagoya, 2010"
+],
+"answer": 1,
+"explain": "Opened 5 June 1992 and in force from 29 Dec 1993. The USA is the only UN member that has not ratified it. [Wikipedia: Convention on Biological Diversity]",
+"theme": "Ecology, biodiversity, conservation & plant geography",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "ECO-3",
+"level": 3,
+"asked": "hotspots 2016, 2018, 2020, 2021, 2023; criteria asked directly 2022 (P2 Q7a, 20 m)",
+"q": "To qualify as a biodiversity hotspot (Myers 2000 criteria), a region must have:",
+"options": [
+"≥1,500 endemic vascular plant species AND have lost ≥70% of its primary vegetation",
+"≥1,000 endemic species and ≥50% loss",
+"≥1,500 endemic vertebrates and ≥70% loss",
+"≥5,000 vascular plants and ≥30% loss"
+],
+"answer": 0,
+"explain": "36 zones qualify; the Himalaya, Indo-Burma and Western Ghats & Sri Lanka are among them. [Wikipedia: Biodiversity hotspot]",
+"theme": "Ecology, biodiversity, conservation & plant geography",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "ECO-4",
+"level": 4,
+"asked": "IUCN categories 2019 (P2 Q5d); Red Data Book 2023 (P2 Q5c)",
+"q": "In the IUCN Red List, the term \"threatened\" covers exactly:",
+"options": [
+"EX, EW, CR",
+"CR, EN, VU",
+"EN, VU, NT",
+"CR, EN, VU, NT"
+],
+"answer": 1,
+"explain": "Critically Endangered, Endangered and Vulnerable. The Red List (also called the Red Data Book) was founded in 1964. [Wikipedia: IUCN Red List]",
+"theme": "Ecology, biodiversity, conservation & plant geography",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "ECO-5",
+"level": 5,
+"asked": "alpha/beta/gamma 2019 (P2 Q5c), 2020 (P2 Q6a, 20 m)",
+"q": "Consider:\n1. The terms α, β and γ diversity were introduced by R. H. Whittaker.\n2. In Whittaker's simplest definition, β = γ / α.\n3. γ diversity is the mean species diversity per local site.\n4. β diversity expresses differentiation (turnover) among local sites.",
+"options": [
+"1, 2 and 4",
+"1 and 3",
+"2, 3 and 4",
+"all four"
+],
+"answer": 0,
+"explain": "γ is the TOTAL diversity of the landscape. α is the mean per site. [Wikipedia: Beta diversity; Gamma diversity]",
+"theme": "Ecology, biodiversity, conservation & plant geography",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "ECO-6",
+"level": 6,
+"asked": "hydrosere vs xerosere 2022 (P2 Q6b); succession/climax 2018, 2020, 2021 (20 m), 2024",
+"q": "The correct sequence of a hydrosere is:",
+"options": [
+"Phytoplankton → submerged (Hydrilla, Vallisneria) → floating (Nymphaea, Nelumbo) → reed-swamp (Typha, Phragmites) → sedge-meadow (Carex, Juncus) → woodland (Salix, Alnus)",
+"Phytoplankton → floating → submerged → sedge-meadow → reed-swamp → woodland",
+"Submerged → phytoplankton → reed-swamp → floating → sedge-meadow → woodland",
+"Phytoplankton → submerged → reed-swamp → floating → sedge-meadow → woodland"
+],
+"answer": 0,
+"explain": "[Wikipedia: Hydrosere]",
+"theme": "Ecology, biodiversity, conservation & plant geography",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "CB-1",
+"level": 1,
+"asked": "lysosomes 2020 (P2 Q2b), 2021 (P2 Q3b)",
+"q": "Lysosomes were discovered in the 1950s by:",
+"options": [
+"George Palade",
+"Christian de Duve",
+"Camillo Golgi",
+"Keith Porter"
+],
+"answer": 1,
+"explain": "[Wikipedia: Lysosome]",
+"theme": "Cell biology",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "CB-2",
+"level": 2,
+"asked": "nuclear pore complex 2015 (P2 Q2a, 20 m), 2016 (P2 Q1d), 2023 (P2 Q1a)",
+"q": "The proteins that make up the nuclear pore complex are called:",
+"options": [
+"Nucleoporins",
+"Karyopherins",
+"Lamins",
+"Histones"
+],
+"answer": 0,
+"explain": "A human NPC is about 1,000 protein molecules drawn from about 35 distinct nucleoporins. [Wikipedia: Nuclear pore complex]",
+"theme": "Cell biology",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "CB-3",
+"level": 3,
+"asked": "heterochromatin 2021 (P2 Q3a, 20 m: constitutive vs facultative), 2023 (P2 Q4b)",
+"q": "In most organisms, constitutive heterochromatin occurs mainly:",
+"options": [
+"Around centromeres and near telomeres",
+"At promoters of highly expressed genes",
+"Only on the inactive X",
+"In nucleoli"
+],
+"answer": 0,
+"explain": "The source also says H3K27me3 marks facultative heterochromatin more often, and H3K9 marks constitutive. [Wikipedia: Heterochromatin]",
+"theme": "Cell biology",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "CB-4",
+"level": 4,
+"asked": "cell cycle/CDKs 2015, 2016, 2018 (P2 Q2a, 20 m), 2022, 2023, 2024 (P2 Q3a, 20 m)",
+"q": "About maturation (mitosis)-promoting factor (MPF):\n1. MPF is a cyclin–CDK1 complex.\n2. Wee1 keeps CDK1 inactive by phosphorylating its Tyr-15.\n3. CDKs are serine/threonine kinases named for their cyclin activators.\n4. MPF is maximally active during G1 and S.",
+"options": [
+"1, 2 and 3",
+"1 and 4",
+"2, 3 and 4",
+"all four"
+],
+"answer": 0,
+"explain": "MPF drives G2→M. In G1/S its CDK1 is held inactive by Wee1. [Wikipedia: Maturation promoting factor; Cyclin-dependent kinase]",
+"theme": "Cell biology",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "CB-6",
+"level": 6,
+"asked": "prions 2015 (P2 Q1a \"why prions are not viruses\"), 2019 (P2 Q4a, 20 m), 2024 (P2 Q3c)",
+"q": "Consider:\n1. Prions contain no nucleic acid.\n2. Infectious PrP resists proteases, while normal PrPC is readily digested by proteinase K.\n3. The word \"prion\" was coined by Stanley Prusiner in 1982.\n4. Prions multiply by reverse-transcribing an RNA template.",
+"options": [
+"1, 2 and 3",
+"1 and 4",
+"2, 3 and 4",
+"all four"
+],
+"answer": 0,
+"explain": "Prions have no nucleic acid at all (no DNA or RNA). CJD (humans) and BSE (cattle) are prion diseases. [Wikipedia: Prion]",
+"theme": "Cell biology",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "TAX-2",
+"level": 2,
+"asked": "APG IV 2021 (P1 Q5e)",
+"q": "The APG IV system was published in:",
+"options": [
+"2009",
+"2013",
+"2016",
+"2019"
+],
+"answer": 2,
+"explain": "7 years after APG III (2009). [Wikipedia: APG IV system]",
+"theme": "Angiosperm taxonomy",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "TAX-3",
+"level": 3,
+"asked": "Bentham & Hooker 2014 (P1 Q8a), 2015 (P1 Q8b, 20 m), 2017 (P1 Q6a), 2019 (P1 Q5a)",
+"q": "In Bentham & Hooker's Genera Plantarum (3 vols, 1862–1883), gymnosperms were placed:",
+"options": [
+"First, as the most primitive seed plants",
+"Between the dicotyledons (after Monochlamydeae) and the monocotyledons",
+"After the monocotyledons",
+"Inside Monochlamydeae"
+],
+"answer": 1,
+"explain": "The outline reads Dicotyledones → Monochlamydeae → class Gymnospermeae → Monocotyledones. [Wikipedia: Bentham & Hooker system]",
+"theme": "Angiosperm taxonomy",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "TAX-4",
+"level": 4,
+"asked": "ICN principles 2024 (P1 Q6b-ii); author citation 2017 (P1 Q5a); herbaria 2015, 2019, 2024",
+"q": "Which statements about the ICN are correct?\n1. Botanical nomenclature is independent of zoological and bacteriological nomenclature.\n2. A botanical name is fixed to a taxon by a type.\n3. Priority of first publication is a guiding principle.\n4. The type is almost always a living plant kept in a botanical garden.",
+"options": [
+"1, 2 and 3",
+"2 and 4",
+"1, 3 and 4",
+"all four"
+],
+"answer": 0,
+"explain": "A type is almost always dried material kept in a herbarium. [Wikipedia: International Code of Nomenclature for algae, fungi, and plants]",
+"theme": "Angiosperm taxonomy",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "TAX-5",
+"level": 5,
+"asked": "families every year. Asteraceae 2018, 2023; Brassicaceae 2014, 2017, 2022; Asclepiadaceae 2017, 2018, 2021; Euphorbiaceae 2015, 2016, 2023, 2024",
+"q": "Match the family with its diagnostic structure:\nA. Asteraceae  B. Brassicaceae  C. Asclepiadoideae (old Asclepiadaceae)  D. Euphorbia (Euphorbiaceae)\n1. Cyathium  2. Pollinia  3. Capitulum, cypsela with pappus  4. Silique (siliqua)",
+"options": [
+"A-3 B-4 C-2 D-1",
+"A-4 B-3 C-1 D-2",
+"A-3 B-2 C-4 D-1",
+"A-1 B-4 C-2 D-3"
+],
+"answer": 0,
+"explain": "[Wikipedia: Asteraceae; Brassicaceae; Asclepiadoideae; Cyathium]",
+"theme": "Angiosperm taxonomy",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "TAX-6",
+"level": 6,
+"asked": "systems of classification 2014, 2015, 2017, 2018 (Cronquist, P1 Q6a), 2019, 2021 (APG IV), 2022 (Dahlgren; Takhtajan/Cronquist for gymnosperms), 2023 (Hutchinson), 2024",
+"q": "Consider:\n1. Cronquist placed flowering plants in two classes, Magnoliopsida and Liliopsida.\n2. Hutchinson (3rd edn, 1973) treated the woody Lignosae as more primitive than the Herbaceae.\n3. In Engler's system, Dicotyledoneae comprised subclasses Archichlamydeae and Sympetalae.\n4. APG IV appeared seven years after APG III.",
+"options": [
+"1 and 3 only",
+"1, 2 and 3 only",
+"2 and 4 only",
+"1, 2, 3 and 4"
+],
+"answer": 3,
+"explain": "[Wikipedia: Cronquist system; Hutchinson system; Engler system; APG IV system]",
+"theme": "Angiosperm taxonomy",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "RES-1",
+"level": 1,
+"asked": "Vavilov 2017 (P1 Q5b), 2022 (P1 Q8c), 2024 (P1 Q8a); Old-World crops 2023 (P1 Q5d)",
+"q": "Centres of origin of cultivated plants were first identified (1924) by:",
+"options": [
+"Charles Darwin",
+"Nikolai Vavilov",
+"Gregor Mendel",
+"Jack Harlan"
+],
+"answer": 1,
+"explain": "[Wikipedia: Vavilov center]",
+"theme": "Economic botany & ethnobotany",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "RES-2",
+"level": 2,
+"asked": "jute 2024 (P1 Q7a); fibre plants 2017, 2019, 2021, 2023 (P1 Q8a)",
+"q": "Jute fibre is obtained from:",
+"options": [
+"Seed hairs of Gossypium",
+"Bast (phloem) of Corchorus, family Malvaceae",
+"Leaves of Agave",
+"Mesocarp of Cocos"
+],
+"answer": 1,
+"explain": "Corchorus olitorius is the main source; C. capsularis gives the better fibre. [Wikipedia: Jute]",
+"theme": "Economic botany & ethnobotany",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "RES-3",
+"level": 3,
+"asked": "pyrethrum 2024 (P1 Q7a); insecticide plants 2019 (P1 Q8b)",
+"q": "Pyrethrins, the natural insecticides, come from:",
+"options": [
+"Azadirachta indica",
+"Chrysanthemum (Tanacetum) cinerariifolium, Asteraceae",
+"Derris elliptica",
+"Nicotiana tabacum"
+],
+"answer": 1,
+"explain": "They act on the insect nervous system. [Wikipedia: Pyrethrin; Tanacetum cinerariifolium]",
+"theme": "Economic botany & ethnobotany",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "RES-4",
+"level": 4,
+"asked": "2024 P1 Q7a (resin, jute, cassava, long pepper, pyrethrum)",
+"q": "Consider:\n1. Long pepper is Piper longum (Piperaceae), cultivated for its fruit.\n2. Cassava is Manihot esculenta (Euphorbiaceae), grown for its starchy tuberous root.\n3. Cassava contains linamarin, a cyanogenic glucoside that can release hydrogen cyanide.\n4. Pyrethrum belongs to Piperaceae.",
+"options": [
+"1, 2 and 3",
+"1, 3 and 4",
+"2 and 4",
+"all four"
+],
+"answer": 0,
+"explain": "Pyrethrum is in Asteraceae. [Wikipedia: Long pepper; Cassava; Linamarin; Tanacetum cinerariifolium]",
+"theme": "Economic botany & ethnobotany",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "RES-5",
+"level": 5,
+"asked": "energy plants 2015 (P1 Q7a), hydrocarbon plants 2018 (P1 Q8c), petrocrops 2020 (P1 Q5b), biofuels 2021 (P1 Q8c); Jatropha 2022 (P1 Q7b)",
+"q": "Consider:\n1. Euphorbia tirucalli is a hydrocarbon plant with a poisonous latex.\n2. Jatropha curcas seeds hold about 27–40% oil that can be processed into biodiesel.\n3. Jatropha belongs to Fabaceae.\n4. In his last years of research, Melvin Calvin studied oil-producing plants as renewable energy sources.",
+"options": [
+"1, 2 and 4",
+"1, 2, 3 and 4",
+"2 and 3",
+"1 and 3"
+],
+"answer": 0,
+"explain": "Jatropha is in Euphorbiaceae (spurge family). [Wikipedia: Euphorbia tirucalli; Jatropha curcas; Melvin Calvin]",
+"theme": "Economic botany & ethnobotany",
+"subject": "Botany",
+"source_note": "IFoS Botany 2014–24"
+},
+{
+"id": "AGX-1",
+"level": 1,
+"theme": "Agricultural extension",
+"asked": "KVK: CSE 2008, CSE 2009, CSE 2010, CSE 2012, IFoS 2013, CSE 2015, CSE 2016, CSE 2017, IFoS 2017, CSE 2018, IFoS 2021, CSE 2022, CSE 2023, CSE 2024, IFoS 2024",
+"q": "On a pilot basis, the first Krishi Vigyan Kendra (KVK) was set up in:",
+"options": [
+"Pondicherry (under TNAU)",
+"Pusa, New Delhi (under IARI)",
+"Ludhiana (under PAU)",
+"Hyderabad (under ICRISAT)"
+],
+"answer": 0,
+"explain": "The KVK idea came from the Mehta Committee (1973); the first KVK was opened on a pilot basis in Pondicherry under TNAU. [Wikipedia: Krishi Vigyan Kendra]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-2",
+"level": 2,
+"theme": "Agricultural extension",
+"asked": "KVK history/mandates: IFoS 2024; KVKs also in IFoS 2013, 2017, 2021 and CSE 2008–2024",
+"q": "The Krishi Vigyan Kendra concept was promoted by which committee, in 1973?",
+"options": [
+"Swaminathan Committee",
+"Mehta Committee",
+"Randhawa Committee",
+"Vaidyanathan Committee"
+],
+"answer": 1,
+"explain": "KVKs were promoted by the Mehta Committee in 1973. [Wikipedia: Krishi Vigyan Kendra]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-3",
+"level": 2,
+"theme": "Agricultural marketing & price policy",
+"asked": "e-NAM: CSE 2018, CSE 2019, IFoS 2019, CSE 2023, IFoS 2024",
+"q": "The e-NAM electronic market pilot was launched on:",
+"options": [
+"2 October 2014",
+"14 April 2016",
+"1 July 2017",
+"15 August 2018"
+],
+"answer": 1,
+"explain": "The e-NAM pilot was launched on 14 April 2016; the portal is managed by SFAC. [Wikipedia: National Agriculture Market]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-4",
+"level": 4,
+"theme": "Agricultural marketing & price policy",
+"asked": "MSP/CACP: CSE 2014, IFoS 2015, CSE 2016, CSE 2017, CSE 2021, CSE 2023",
+"q": "Consider:\n1. CACP was set up in 1965 as the Agricultural Prices Commission.\n2. It got its present name in 1985.\n3. The e-NAM portal is managed by NABARD.\n4. CACP recommends Minimum Support Prices for select crops.",
+"options": [
+"1, 2 and 4",
+"1 and 3",
+"2, 3 and 4",
+"1, 2, 3 and 4"
+],
+"answer": 0,
+"explain": "e-NAM is managed by the Small Farmers Agribusiness Consortium (SFAC), not NABARD. [Wikipedia: Commission for Agricultural Costs and Prices; Wikipedia: National Agriculture Market]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-5",
+"level": 3,
+"theme": "Cropping systems",
+"asked": "LER: CSE 2001, CSE 2002, IFoS 2002, CSE 2005, IFoS 2011, IFoS 2017, IFoS 2018, CSE 2021, IFoS 2021, IFoS 2022, IFoS 2023",
+"q": "Maize intercropped with soybean yields 3,000 kg/ha maize (sole maize 4,000) and 1,200 kg/ha soybean (sole soybean 2,000). The land equivalent ratio is:",
+"options": [
+"0.75",
+"1.35",
+"1.60",
+"0.60"
+],
+"answer": 1,
+"explain": "LER = sum of intercrop/sole yield ratios = 3,000/4,000 + 1,200/2,000 = 0.75 + 0.60 = 1.35. [Wikipedia: Land equivalent ratio]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-6",
+"level": 6,
+"theme": "Cropping systems",
+"asked": "LER: CSE 2001, CSE 2002, IFoS 2002, CSE 2005, IFoS 2011, IFoS 2017, IFoS 2018, CSE 2021, IFoS 2021, IFoS 2022, IFoS 2023",
+"q": "Sorghum + pigeonpea intercrop: sorghum 2.4 t/ha (sole 3.0), pigeonpea 0.9 t/ha (sole 1.2). Which are correct?\n1. LER = 1.55\n2. About 1.55 ha of sole crops would be needed to match 1 ha of this intercrop\n3. An LER below 1 would show an intercropping advantage\n4. LER is the sum of each crop's intercrop/sole yield ratio",
+"options": [
+"1, 2 and 4",
+"1 and 3",
+"2, 3 and 4",
+"1, 2, 3 and 4"
+],
+"answer": 0,
+"explain": "0.8 + 0.75 = 1.55; an LER above 1 (not below) shows the intercrop advantage. [Wikipedia: Land equivalent ratio]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-7",
+"level": 1,
+"theme": "Soil & water conservation",
+"asked": "USLE: IFoS 2018; soil erosion every year (answer bank theme 9)",
+"q": "In the Universal Soil Loss Equation (A = R K L S C P), K stands for:",
+"options": [
+"Rainfall erosivity",
+"Soil erodibility",
+"Slope length",
+"Crop cover"
+],
+"answer": 1,
+"explain": "R = rainfall erosivity, K = soil erodibility, L and S = topographic factors, C and P = cropping management factors. [Wikipedia: Universal Soil Loss Equation]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-8",
+"level": 4,
+"theme": "Soil & water conservation",
+"asked": "USLE: IFoS 2018; soil erosion every year (answer bank theme 9)",
+"q": "Consider:\n1. USLE predicts long-term average annual soil loss.\n2. R is the rainfall erosivity factor.\n3. L and S are topographic factors.\n4. USLE was developed from erosion data collected by ICAR in India.",
+"options": [
+"1, 2 and 3",
+"1 and 4",
+"2, 3 and 4",
+"1, 2, 3 and 4"
+],
+"answer": 0,
+"explain": "USLE came from erosion data collected from the 1930s by the USDA Soil Conservation Service. [Wikipedia: Universal Soil Loss Equation]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-9",
+"level": 2,
+"theme": "Weed science",
+"asked": "Parthenium: CSE 2020; weed science every year (answer bank theme 10)",
+"q": "Parthenium hysterophorus (congress grass) belongs to the family:",
+"options": [
+"Poaceae",
+"Asteraceae",
+"Amaranthaceae",
+"Solanaceae"
+],
+"answer": 1,
+"explain": "It is a herbaceous weed of Asteraceae, native to the American tropics and invasive in India. [Wikipedia: Parthenium hysterophorus]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-10",
+"level": 3,
+"theme": "Weed science",
+"asked": "Parthenium: CSE 2020; biological control of weeds (answer bank theme 10)",
+"q": "The Mexican beetle introduced to India in 1984 for biological control of Parthenium is:",
+"options": [
+"Neochetina eichhorniae",
+"Zygogramma (Calligrapha) bicolorata",
+"Cactoblastis cactorum",
+"Trichogramma chilonis"
+],
+"answer": 1,
+"explain": "Calligrapha (formerly Zygogramma) bicolorata, first introduced to India in 1984, defoliates and often kills Parthenium. [Wikipedia: Parthenium hysterophorus; Wikipedia: Zygogramma bicolorata]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-11",
+"level": 2,
+"theme": "Problem soils",
+"asked": "Sodic soils: IFoS 2005, IFoS 2012, IFoS 2015, IFoS 2016, CSE 2018, CSE 2019, IFoS 2023",
+"q": "The most common amendment used to reclaim sodic (alkali) soils is:",
+"options": [
+"Gypsum",
+"Lime (CaCO3)",
+"Rock phosphate",
+"Muriate of potash"
+],
+"answer": 0,
+"explain": "Gypsum (CaSO4·2H2O) supplies Ca2+ to replace Na+ on the exchange complex. [Wikipedia: Alkali soil]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-12",
+"level": 5,
+"theme": "Problem soils",
+"asked": "Reclamation of saline & sodic soils: IFoS 2023; sodic soils also IFoS 2005, 2012, 2015, 2016, CSE 2018, 2019",
+"q": "Consider, about reclaiming alkali soils:\n1. Gypsum supplies Ca2+ that replaces Na+ on the exchange complex.\n2. Gypsum converts sodium carbonate to sodium sulphate, a neutral salt.\n3. Enough drainage (natural or subsurface) is needed.\n4. Pyrite cannot be used because it raises soil pH.",
+"options": [
+"1, 2 and 3",
+"1 and 4",
+"2, 3 and 4",
+"1, 2, 3 and 4"
+],
+"answer": 0,
+"explain": "Pyrite is an acidifying mineral that can be used to reclaim alkaline soils; it lowers pH. [Wikipedia: Alkali soil]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-13",
+"level": 1,
+"theme": "Soil fertility & plant nutrition management",
+"asked": "Biofertilizers: CSE 2010, CSE 2020, CSE 2021, CSE 2022, IFoS 2023",
+"q": "Azotobacter is best described as a:",
+"options": [
+"Symbiotic N-fixer in legume nodules",
+"Aerobic, free-living N-fixing soil bacterium",
+"Phosphate-solubilising fungus",
+"Blue-green alga in rice fields"
+],
+"answer": 1,
+"explain": "Azotobacter species are aerobic, free-living soil microbes that fix atmospheric nitrogen. [Wikipedia: Azotobacter]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-14",
+"level": 5,
+"theme": "Soil fertility & plant nutrition management",
+"asked": "Biofertilizers & INM: IFoS 2023; CSE 2020–22",
+"q": "Which statements about Azotobacter are correct?\n1. It is aerobic and free-living.\n2. It is Gram-negative.\n3. It can form thick-walled cysts.\n4. It fixes nitrogen only inside root nodules of legumes.",
+"options": [
+"1, 2 and 3",
+"1 and 4",
+"2, 3 and 4",
+"1, 2, 3 and 4"
+],
+"answer": 0,
+"explain": "It is free-living, not a nodule symbiont; Beijerinck described the first species (A. chroococcum) in 1901. [Wikipedia: Azotobacter]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-15",
+"level": 1,
+"theme": "Agricultural policy, schemes & institutions",
+"asked": "Soil Health Card: CSE 2019, CSE 2022",
+"q": "The Soil Health Card scheme was launched in:",
+"options": [
+"2012",
+"2015",
+"2018",
+"2020"
+],
+"answer": 1,
+"explain": "Launched by the Government of India on 19 February 2015. [Wikipedia: Soil Health Card Scheme]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-16",
+"level": 3,
+"theme": "Agricultural policy, schemes & institutions",
+"asked": "KCC: CSE 2013, 2016, 2022",
+"q": "The Kisan Credit Card model scheme (1998) was prepared by NABARD on the recommendations of:",
+"options": [
+"R. V. Gupta Committee",
+"Vyas Committee",
+"Narasimham Committee",
+"Raghuram Rajan Committee"
+],
+"answer": 0,
+"explain": "KCC (Aug 1998) was modelled by NABARD on the R. V. Gupta Committee's recommendations. [Wikipedia: Kisan Credit Card]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-17",
+"level": 4,
+"theme": "Insect pests & IPM",
+"asked": "IPM / economic threshold: IFoS 2025 and 16 earlier IFoS/CSE papers since 2001",
+"q": "Consider, in IPM:\n1. The economic injury level is the pest level at which damage costs more than treating it.\n2. The economic threshold is the level at which action must be taken to stop the pest reaching the EIL.\n3. IPM aims at eradicating the pest.\n4. Thresholds are pest- and site-specific.",
+"options": [
+"1, 2 and 4",
+"1 and 3",
+"2, 3 and 4",
+"1, 2, 3 and 4"
+],
+"answer": 0,
+"explain": "IPM emphasises control, not eradication. [Wikipedia: Integrated pest management]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-18",
+"level": 5,
+"theme": "Insect pests & IPM",
+"asked": "Bollworm: IFoS 2015",
+"q": "Consider, about pink bollworm (Pectinophora gossypiella):\n1. Larvae feed inside cotton bolls on lint and seeds.\n2. In parts of India it is resistant to first-generation Bt cotton expressing Cry1Ac.\n3. It is native to the Americas.\n4. The USDA announced in 2018 it had been eradicated from the continental US.",
+"options": [
+"1, 2 and 4",
+"1 and 3",
+"2, 3 and 4",
+"1, 2, 3 and 4"
+],
+"answer": 0,
+"explain": "Pink bollworm is native to Asia. US eradication combined Bt cotton with sterile-male releases. [Wikipedia: Pink bollworm]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-19",
+"level": 3,
+"theme": "Insect pests & IPM",
+"asked": "Fall armyworm: IFoS 2021",
+"q": "Fall armyworm (Spodoptera frugiperda) began spreading widely in India in:",
+"options": [
+"July 2016",
+"December 2018",
+"March 2020",
+"2010"
+],
+"answer": 1,
+"explain": "It began spreading widely in India in December 2018; biopesticides SfNPV and Habrobracon hebetor are recommended. [Wikipedia: Fall armyworm]",
+"subject": "Agriculture"
+},
+{
+"id": "AGX-20",
+"level": 6,
+"theme": "Agricultural policy, schemes & institutions",
+"asked": "Crop insurance: CSE 2010, CSE 2011, IFoS 2015, CSE 2017, CSE 2018, IFoS 2019, CSE 2021, CSE 2022",
+"q": "Consider, about PMFBY:\n1. It covers food and oilseed crops and annual commercial/horticultural crops with past yield data.\n2. Gujarat exited the scheme in August 2020.\n3. Punjab declined to implement it.\n4. Every state has implemented it since launch.",
+"options": [
+"1, 2 and 3",
+"1 and 4",
+"2 and 4",
+"1, 2, 3 and 4"
+],
+"answer": 0,
+"explain": "Several states stayed out or exited (Punjab never joined; Gujarat, Andhra Pradesh, Telangana, Jharkhand exited). [Wikipedia: Pradhan Mantri Fasal Bima Yojana]",
+"subject": "Agriculture"
+}
+]

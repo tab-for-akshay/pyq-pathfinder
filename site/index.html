@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PYQ Pathfinder: adaptive UPSC Botany &amp; Agriculture practice</title>
+<meta name="description" content="Offline-first adaptive MCQ tutor and PYQ pattern map for UPSC IFoS and CSE Botany and Agriculture, built from 5,794 previous-year questions (2001 to 2025). On-device AI explanations.">
+<meta property="og:title" content="PYQ Pathfinder: adaptive UPSC Botany & Agriculture practice">
+<meta property="og:description" content="5,794 previous-year questions mapped into a Pareto study plan, plus an adaptive MCQ tutor that works offline. Built by Tab, an AI assistant, for Akshay Wagh.">
+<meta name="theme-color" content="#1f5f3f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3c6 5 9 11 9 16a9 9 0 0 1-18 0c0-5 3-11 9-16z" fill="#2f8f5b"/><path d="M16 9v17M16 15l-4-3M16 20l5-4" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+    <div><h1>PYQ Pathfinder</h1><p class="tag">Study what UPSC actually asks. Practise it until it sticks.</p></div>
+  </div>
+  <div id="ai-status" class="ai-status" role="status" aria-live="polite">Checking on-device AI…</div>
+</header>
+<nav class="tabs" role="tablist" aria-label="Sections">
+  <button role="tab" id="tab-practice" aria-controls="panel-practice" aria-selected="true">Practice</button>
+  <button role="tab" id="tab-map" aria-controls="panel-map" aria-selected="false" tabindex="-1">Pattern map</button>
+  <button role="tab" id="tab-search" aria-controls="panel-search" aria-selected="false" tabindex="-1">PYQ search</button>
+  <button role="tab" id="tab-about" aria-controls="panel-about" aria-selected="false" tabindex="-1">About</button>
+</nav>
+<main id="main">
+<section id="panel-practice" role="tabpanel" aria-labelledby="tab-practice">
+  <div class="grid2">
+    <div class="col">
+    <div class="card quiz" id="quiz">
+      <div class="quiz-top">
+        <div class="quiz-head">
+          <span class="pill" id="q-level">Level 1</span>
+          <span class="pill soft" id="q-theme">Theme</span>
+        </div>
+        <label class="subj-pick"><span class="sr">Subject</span>
+          <select id="q-subj"><option value="">Botany + Agriculture</option><option>Botany</option><option>Agriculture</option></select>
+        </label>
+      </div>
+      <p class="asked" id="q-asked"></p>
+      <h2 class="q" id="q-text">Loading questions…</h2>
+      <ol class="opts" id="q-opts" type="a"></ol>
+      <div class="feedback" id="q-feedback" hidden></div>
+      <div class="actions">
+        <button class="btn ghost" id="btn-explain" hidden>Explain deeper (on-device AI)</button>
+        <button class="btn" id="btn-next" hidden>Next question</button>
+      </div>
+      <div class="ai-out" id="ai-out" hidden></div>
+    </div>
+    <div class="card where" aria-labelledby="where-h">
+      <h2 id="where-h">Where the AI runs</h2>
+      <div class="where-grid">
+        <div><span class="badge dev">On device</span><p>Quick explanations and answer outlines run on Gemini Nano inside Chrome: instant, private, free, and they work in airplane mode.</p></div>
+        <div><span class="badge cloud">Cloud</span><p>Grading a full written answer is heavier, so it prefers a cloud Gemini model via Firebase AI Logic. Offline? It waits in a queue and runs when you reconnect.</p></div>
+      </div>
+      <p class="hint" id="where-status"></p>
+    </div>
+    </div>
+    <aside class="card stats" aria-labelledby="stats-h">
+      <h2 id="stats-h">Your progress</h2>
+      <div class="kpis">
+        <div><span class="kpi" id="k-level">1</span><span class="kl">current level</span></div>
+        <div><span class="kpi" id="k-acc">–</span><span class="kl">accuracy</span></div>
+        <div><span class="kpi" id="k-ready">0%</span><span class="kl">exam-weighted readiness</span></div>
+      </div>
+      <p class="hint">Right answer moves you up a level (1 recall → 6 exam-hard). A wrong one keeps you at the same level and marks the theme as weak, so it comes back sooner. Readiness weights each theme by its share of marks in the PYQs.</p>
+      <h3>By theme</h3>
+      <ul class="theme-list" id="theme-stats"></ul>
+      <button class="btn ghost small" id="btn-reset">Reset progress</button>
+    </aside>
+  </div>
+</section>
+
+<section id="panel-map" role="tabpanel" aria-labelledby="tab-map" hidden>
+  <div class="card">
+    <div class="map-head">
+      <h2>Where the marks are</h2>
+      <div class="seg" role="group" aria-label="Subject">
+        <button class="on" data-subj="Botany" aria-pressed="true">Botany</button>
+        <button data-subj="Agriculture" aria-pressed="false">Agriculture</button>
+      </div>
+    </div>
+    <div class="headline" id="headline"></div>
+    <p class="hint" id="map-sub"></p>
+    <ol class="bars" id="bars"></ol>
+  </div>
+  <div class="card cov">
+    <h2>What's in the data</h2>
+    <p class="hint">Question parts per paper and year. Gaps are papers we could not find; partial rows are flagged in search.</p>
+    <div class="cov-wrap"><table id="cov"><caption class="sr">Question parts by exam, subject and year</caption></table></div>
+    <ul class="hint" id="cov-notes"></ul>
+  </div>
+</section>
+
+<section id="panel-search" role="tabpanel" aria-labelledby="tab-search" hidden>
+  <div class="card">
+    <h2>Search 25 years of questions</h2>
+    <p class="hint">Open any question to write an answer and get it checked: word count and key points on your device, examiner-style feedback from AI.</p>
+    <form class="search" id="search-form" role="search">
+      <label for="s-q" class="sr">Search words</label>
+      <input id="s-q" type="search" placeholder="e.g. photorespiration, mulching, apomixis" autocomplete="off">
+      <label for="s-subj" class="sr">Subject</label>
+      <select id="s-subj"><option value="">All subjects</option><option>Botany</option><option>Agriculture</option></select>
+      <label for="s-exam" class="sr">Exam</label>
+      <select id="s-exam"><option value="">IFoS + CSE</option><option>IFoS</option><option>CSE</option></select>
+    </form>
+    <p class="hint" id="s-count"></p>
+    <ul class="results" id="s-results"></ul>
+  </div>
+</section>
+
+<section id="panel-about" role="tabpanel" aria-labelledby="tab-about" hidden>
+  <div class="card prose">
+    <h2>About this project</h2>
+    <p><strong>PYQ Pathfinder</strong> helps UPSC Indian Forest Service and Civil Services aspirants with Botany and Agriculture optionals spend their limited hours where the exam actually puts its marks.</p>
+    <h3>What it does</h3>
+    <ul>
+      <li><strong>Pattern map:</strong> 5,794 previous-year question parts (IFoS and CSE Mains, 2001 to 2025, gaps listed) classified into 49 themes and ranked by marks. In Botany, six themes carry over half the marks.</li>
+      <li><strong>Adaptive tutor:</strong> 50 MCQs across Botany and Agriculture, each tied to the exam years its theme was asked and each key checked against a cited source. Difficulty climbs one level per right answer; weak themes come back sooner.</li>
+      <li><strong>Hybrid AI:</strong> explanations and outlines prefer Gemini Nano on the device; answer grading prefers a cloud Gemini model through Firebase AI Logic and queues while offline. Every AI reply is labelled with where it ran, and verified keys always outrank AI text.</li>
+      <li><strong>Offline-first:</strong> after the first visit the app and question bank work with no network.</li>
+    </ul>
+    <h3>How the answer keys were checked</h3>
+    <p>Each MCQ's key was checked against the page it cites (shown under every answer). An independent human review of all keys is the next step; until then treat a key that looks wrong as a bug and check the cited page.</p>
+    <h3>Who built it</h3>
+    <p>Team lead: <strong>Akshay Wagh</strong>, an IFoS aspirant, who set the goal and reviews the work. Builder: <strong>Tab, an AI assistant</strong>, which wrote the code, built the dataset and wrote the MCQs. Question sources: UPSC papers via the Wayback Machine, iasexamportal.com, civilserviceindia.com and others.</p>
+    <p class="hint">Hackathon build, November 2026. Not affiliated with UPSC.</p>
+  </div>
+</section>
+</main>
+<footer class="foot"><p>Built by Tab (AI assistant) for Akshay Wagh · Works offline · No sign-in, no tracking</p></footer>
+<script src="firebase-config.js"></script>
+<script type="module" src="script.js"></script>
+</body>
+</html>
