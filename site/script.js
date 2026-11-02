@@ -32,6 +32,7 @@ async function detectAI() {
       const { initializeApp } = await import(`https://www.gstatic.com/firebasejs/${V}/firebase-app.js`);
       const { getAI, getGenerativeModel, GoogleAIBackend, InferenceMode } = await import(`https://www.gstatic.com/firebasejs/${V}/firebase-ai.js`);
       const app = initializeApp(cfg);
+      try { const { initializeAppCheck, ReCaptchaEnterpriseProvider } = await import(`https://www.gstatic.com/firebasejs/${V}/firebase-app-check.js`); initializeAppCheck(app, { provider: new ReCaptchaEnterpriseProvider("6LeqjgsuAAAAAOyE37XoxI5-jpH8IlGQ0bblkig5"), isTokenAutoRefreshEnabled: true }); } catch (e) { console.warn('AppCheck init failed', e); }
       const ai = getAI(app, { backend: new GoogleAIBackend() });
       AI.fb = getGenerativeModel(ai, { mode: InferenceMode.PREFER_ON_DEVICE });
       AI.fbCloudFirst = getGenerativeModel(ai, { mode: InferenceMode.PREFER_IN_CLOUD });
@@ -74,6 +75,7 @@ async function aiRun(system, text, onChunk, preferCloud) {
     return { text: acc, where: 'on_device' };
   } finally { s.destroy && s.destroy(); }
 }
+const aiErr = e => { const m = String(e && e.message || e); if (/app check|attestation|401|403/i.test(m)) return 'cloud AI could not verify this browser'; if (/429|quota|exhaust/i.test(m)) return 'cloud AI is at its free limit right now'; if (!navigator.onLine) return 'you are offline'; return 'cloud AI did not answer'; };
 const whereBadge = w => w === 'on_device' ? '<span class="badge dev">Ran on device · Gemini Nano</span>' : '<span class="badge cloud">Ran in cloud · Gemini via Firebase</span>';
 
 /* ---------- Progress ---------- */
@@ -140,7 +142,7 @@ $('#btn-explain').addEventListener('click', async () => {
   const sys = 'You are a concise UPSC ' + q.subject + ' tutor. The answer key you are given is verified and correct; never contradict it. Explain in at most 120 words, plain text, no markdown: why the correct option is right, why each other option is wrong, and one memory hook.';
   const prompt = 'Question: ' + q.q + '\nOptions: ' + q.options.map((o, i) => 'abcd'[i] + ') ' + o).join(' | ') + '\nVerified answer: ' + 'abcd'[q.answer] + ') ' + q.options[q.answer] + '\nVerified note: ' + q.explain;
   try { const r = await aiRun(sys, prompt, t => { out.querySelector('.ai-txt').textContent = t; }); out.querySelector('.where-b').innerHTML = whereBadge(r.where); }
-  catch (e) { out.querySelector('.ai-txt').textContent = 'AI could not run here (' + e.message + '). The verified explanation above still stands.'; }
+  catch (e) { out.querySelector('.ai-txt').textContent = 'AI could not run here (' + aiErr(e) + '). The verified explanation above still stands.'; }
 });
 $('#btn-reset').addEventListener('click', () => { if (confirm('Reset your level and history on this device?')) { P = blank(); save(); $('#q-subj').value = ''; renderStats(); render(pickNext()); } });
 
@@ -248,7 +250,7 @@ function doSearch() {
       if (AI.fb && !navigator.onLine && !deviceOK()) { const qq = loadQ(); qq.push({ id, r, ans }); saveQ(qq); box.innerHTML = '<span class="badge cloud">Queued for cloud grading</span><p class="hint">You are offline. It will grade as soon as you reconnect.</p>'; return; }
       box.innerHTML = '<p class="hint">Grading…</p>';
       try { const res = await aiGrade(r, ans); box.innerHTML = whereBadge(res.where) + '<p class="pre">' + esc(res.text) + '</p>'; }
-      catch (e) { box.innerHTML = '<p class="hint">AI could not grade here (' + esc(e.message) + ').</p>'; }
+      catch (e) { box.innerHTML = '<p class="hint">AI could not grade here (' + esc(aiErr(e)) + '). Try again in a minute.</p>'; }
     });
     row.appendChild(wb);
     if (aiUsable()) {
@@ -258,7 +260,7 @@ function doSearch() {
         out.hidden = false; out.innerHTML = '<span class="lbl">AI outline · unchecked, verify facts before using</span><span class="where-b"></span><span class="t">Thinking…</span>';
         const sys = 'You are a UPSC Mains Botany and Agriculture examiner. Give a plain-text answer outline (no markdown): a one-line intro, 5 to 7 key points with Indian examples where natural, a suggested diagram, a one-line conclusion. Stay within about ' + Math.round(r[5] * 15) + ' words. If unsure of a fact, say "check".';
         try { const res = await aiRun(sys, r[0] + ' ' + r[3] + ' ' + r[1] + ' Paper ' + r[2] + ', ' + r[5] + ' marks: ' + r[6], t => { out.querySelector('.t').textContent = t; }); out.querySelector('.where-b').innerHTML = whereBadge(res.where); }
-        catch (e) { out.querySelector('.t').textContent = 'AI could not run here (' + e.message + ').'; }
+        catch (e) { out.querySelector('.t').textContent = 'AI could not run here (' + aiErr(e) + '). Try again in a minute.'; }
       });
       row.appendChild(b); li.appendChild(row); li.appendChild(out);
     } else li.appendChild(row);
